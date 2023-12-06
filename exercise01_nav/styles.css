@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-weight: 400;
+  font-style: normal;
+  src: url(font/SpaceGrotesk-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  font-style: normal;
+  src: url(font/SpaceGrotesk-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  font-style: normal;
+  src: url(font/SpaceGrotesk-SemiBold.ttf);
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Space Grotesk";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: 0;
+  line-height: 0;
+  background: transparent;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  line-height: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 16px 160px;
+}
+
+.nav .list {
+  display: flex;
+}
+
+.action .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./img/Icons.png);
+  background-repeat: no-repeat;
+}
+
+.header .action {
+  display: flex;
+}
+
+.nav .link {
+  color: var(--neutral-04100, #6c7275);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.header .logo {
+  flex: 0 0 105px;
+  height: 24px;
+}
+
+.nav .item {
+  padding: 0 20px;
+}
+
+.item:first-child .link {
+  color: var(--neutral-07100, #141718);
+}
+
+.icon-search {
+  background-position: ;
+}
+
+.icon-cart {
+  width: 50px;
+  height: 24px;
+}
