@@ -114,10 +114,6 @@ input {
 }
 
 /* nav */
-/* 
-.nav_list {
-  display: flex;
-} */
 
 .nav_item {
   display: inline-block;
@@ -142,14 +138,6 @@ input {
 }
 
 /* action */
-
-.only_pc {
-  display: block;
-}
-
-.only_mo {
-  display: none;
-}
 
 .header_action {
   display: flex;
@@ -196,35 +184,6 @@ input {
   color: #fff;
   text-align: center;
 }
-
-/* reponsitive */
-
-@media only screen and (max-width: 375px) {
-  .only_pc {
-    display: none;
-  }
-
-  .only_mo {
-    display: block;
-  }
-
-  .icon_open_nav {
-    display: inline-block;
-    margin-right: 4px;
-    background-position: -78px 0;
-  }
-
-  .logo {
-    flex: 0 0 70px;
-    height: 24px;
-  }
-
-  .header_logo {
-    display: flex;
-  }
-
-  }
-  
 
 
 
