@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Assignment</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <h2 class="form_heading">My Account</h2>
+    <div class="form">
+      <div class="form_nav">
+        <div class="form_avt">
+          <button type="button" class="avt_button">
+            <img src="img/img_avt.png" alt="" class="form_img">
+            <span class="icon_avt form_icon_avt"></span>
+          </button>
+          <span class="form_name_avt">Sofia Havertz</span>
+        </div>
+        <div class="form_info">
+          <ul class="form_list_info">
+            <li class="form_item_info is_active">
+              <a href="" class="link_info">Account</a>
+            </li>
+            <li class="form_item_info">
+              <a href="" class="link_info">Address</a>
+            </li>
+            <li class="form_item_info">
+              <a href="" class="link_info">Orders</a>
+            </li>
+            <li class="form_item_info">
+              <a href="" class="link_info">Wishlist</a>
+            </li>
+            <li class="form_item_info">
+              <a href="" class="link_info">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form action="#" class="form_account">
+        <div class="form_detail">
+          <h3 class="form_name">Account Details</h3>
+          <div class="form_item">
+            <label for="first_name" class="form_title">FIRST NAME *</label>
+            <input type="text" id="first_name" name="first_name" class="form_input" placeholder="First name">
+          </div>
+          <div class="form_item">
+            <label for="last_name" class="form_title">LAST NAME *</label>
+            <input type="text" id="last_name" name="last_name" class="form_input" placeholder="Last name">
+          </div>
+          <div class="form_item">
+            <label for="display_name" class="form_title">DISPLAY NAME *</label>
+            <input type="text" id="display_name" name="display_name" class="form_input" placeholder="Display name">
+            <p class="form_note">This will be how your name will be displayed in the account section and in reviews</p>
+          </div>
+          <div class="form_item">
+            <label for="email" class="form_title">EMAIL *</label>
+            <input type="text" id="email" name="email" class="form_input" placeholder="Email">
+          </div>
+        </div>
+        <div class="form_password">
+          <h3 class="form_name">Password</h3>
+          <div class="form_item">
+            <label for="old_password" class="form_title">OLD PASSWORD</label>
+            <input type="text" id="old_password" name="old_password" class="form_input" placeholder="Old password">
+          </div>
+          <div class="form_item">
+            <label for="new_password" class="form_title">NEW PASSWORD</label>
+            <input type="text" id="new_password" name="new_password" class="form_input" placeholder="New password">
+          </div>
+          <div class="form_item">
+            <label for="repeat_newpassword" class="form_title">REPEAT NEW PASSWORD</label>
+            <input type="text" id="repeat_newpassword" name="repeat_newpassword" class="form_input" placeholder="Repeat new password">
+          </div>
+        </div>
+        <button type="button" class="form_submit">Save changes</button>
+      </form>
+      <!--  -->
+    </div>
+  </div>
+</body>
+
+</html>
