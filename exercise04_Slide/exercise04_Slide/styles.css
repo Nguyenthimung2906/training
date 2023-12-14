@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  src: url(font/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  src: url(font/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  src: url(font/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  src: url(font/Inter-Bold.ttf);
+}
+
+/* common */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Space Grotesk";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: 0;
+  line-height: 0;
+  background: transparent;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  line-height: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* slide */
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 48px 30px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.heading_title {
+  max-width: 149px;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  color: #000;
+}
+
+.heading_more {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #141718;
+  cursor: pointer;
+}
+
+.heading_desc {
+  margin-right: 4px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 28px;
+  color: #141718;
+}
+
+.icon,
+.icon_rating {
+  display: inline-block;
+  background: url(img/list_icon.png);
+  background-repeat: no-repeat;
+  background-size: 340px 31px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.heading_arrow {
+  display: inline-block; 
+  background-position: -248px 0;
+}
+
+.slide {
+  display: flex;
+  margin: 48px 0;
+}
+
+.slide_item {
+  position: relative;
+}
+
+.slide_img {
+  max-width: 100%;
+}
+
+.slide_new,
+.slide_coupon,
+.slide_title,
+.slide_price,
+.slide_cost,
+.btn_cart {
+  font-family: Inter;
+}
+
+.slide_new {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 4px 14px;
+  border-radius: 4px;
+  background: #fff;
+  font-weight: 700;
+  line-height: 16px;
+  color: #141718;
+}
+
+.slide_coupon {
+  position: absolute;
+  top: 48px;
+  left: 16px;
+  padding: 4px 14px;
+  border-radius: 4px;
+  background: #38cb89;
+  font-weight: 700;
+  line-height: 16px;
+  color: #fefefe;
+}
+
+.slide_icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
+}
+
+.slide_heart {
+  display: inline-block;
+  background-position: -271px 0;
+}
+
+.btn_cart {
+  position: absolute;
+  right: 16px;
+  bottom: 19px;
+  left: 16px;
+  padding: 9px 0;
+  border-radius: 8px;
+  background: #141718;
+  font-weight: 500;
+  line-height: 28px;
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.slide_icon_rating {
+  margin-top: 7px;
+}
+
+.icon_rating {
+  width: 16px;
+  height: 16px;
+}
+
+.slide_rating {
+  display: inline-block;
+  background-position: -356px 0;
+}
+
+.slide_title {
+  display: block;
+  margin-top: 4px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #141718;
+}
+
+.slide_price {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #141718;
+}
+
+.slide_cost {
+  display: inline-block;
+  margin: 4px 0 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through;
+  line-height: 22px;
+  color: #6c7275;
+}
+
+.swiper_pagination_newarrival {
+  height: 4px;
+  margin-top: 48px;
+  background: #E8ECEF;
+  border-radius: 10px;
+}
+/* .swiper {
+  margin-top: 48px;
+  overflow: visible;
+}
+
+.swiper_newarrival .swiper-pagination-progressbar.swiper-pagination-horizontal {
+  top: auto;
+  bottom: -48px;
+}
+
+.swiper-pagination-progressbar {
+  border-radius: 10px;
+  background: #E8ECEF;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  border-radius: 10px;
+  background: #343839;
+} */
+
+
+
